@@ -1,0 +1,16 @@
+:root {
+  --clr-primary: 204 43% 93%;
+  --clr-secondary: 218, 22%, 67%;
+  --clr-accent: 71 73% 54%;
+  --clr-heading: 179 62% 43%;
+
+  --ff-karla: "Karla", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body {
+    font-family: var(--ff-karla);
+    font-weight: var(--fw-regular);
+}
