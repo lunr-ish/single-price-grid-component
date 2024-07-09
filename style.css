@@ -2,7 +2,8 @@
   --clr-primary: 204 43% 93%;
   --clr-secondary: 218, 22%, 67%;
   --clr-accent: 71 73% 54%;
-  --clr-heading: 179 62% 43%;
+  --clr-cyan: 179 62% 43%;
+  --clr-heading: var(--clr-cyan);
   --clr-white: 0 0% 100%;
 
   --ff-karla: "Karla", sans-serif;
@@ -55,6 +56,7 @@ a {
   grid-template-columns: 1fr;
   border-radius: 0.25rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .card__header {
@@ -81,6 +83,50 @@ a {
   color: hsl(var(--clr-secondary));
 }
 
+section.pricing {
+  padding: 1.5rem;
+  background: hsl(var(--clr-cyan));
+  color: hsl(var(--clr-primary));
+}
+
+.pricing__title {
+  font-size: 1.125rem;
+}
+
+.pricing__package {
+  margin-block: 1rem 0.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5625rem;
+}
+
+.pricing__package strong {
+  font-size: 2.0625rem;
+  font-weight: var(--fw-bold);
+}
+
+.pricing__benefits {
+  margin-bottom: 1.875rem;
+}
+
+.cta {
+  padding: 0.775rem 1.875rem;
+  background: hsl(var(--clr-accent));
+  font-weight: var(--fw-bold);
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition-duration: 300ms;
+  outline: transparent;
+}
+
+.cta:is(:hover, :focus-visible) {
+  background: hsl(var(--clr-accent) / 50%);
+  border-color: hsl(var(--clr-accent));
+}
+
 @media (min-width: 45rem) {
   .card {
     grid-template-columns: repeat(2, 1fr);
@@ -88,6 +134,10 @@ a {
 
   .card__header {
     grid-column: span 2;
+  }
+
+  .card__header,
+  section.pricing {
     padding: 2.5rem;
   }
 
