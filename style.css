@@ -83,13 +83,18 @@ a {
   color: hsl(var(--clr-secondary));
 }
 
-section.pricing {
+section.pricing,
+section.features {
   padding: 1.5rem;
-  background: hsl(var(--clr-cyan));
   color: hsl(var(--clr-primary));
 }
 
-.pricing__title {
+section.pricing {
+  background: hsl(var(--clr-cyan));
+}
+
+.pricing__title,
+.features__title {
   font-size: 1.125rem;
 }
 
@@ -127,6 +132,19 @@ section.pricing {
   border-color: hsl(var(--clr-accent));
 }
 
+section.features {
+  background: hsl(var(--clr-cyan) / 90%);
+}
+
+.features__list {
+  margin-top: 1.1875rem;
+  font-size: 0.875rem;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
 @media (min-width: 45rem) {
   .card {
     grid-template-columns: repeat(2, 1fr);
@@ -137,7 +155,8 @@ section.pricing {
   }
 
   .card__header,
-  section.pricing {
+  section.pricing,
+  section.features {
     padding: 2.5rem;
   }
 
