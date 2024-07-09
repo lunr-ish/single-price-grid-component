@@ -148,6 +148,7 @@ section.features {
 @media (min-width: 45rem) {
   .card {
     grid-template-columns: repeat(2, 1fr);
+    border-radius: 0.5rem;
   }
 
   .card__header {
