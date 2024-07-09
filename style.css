@@ -58,6 +58,26 @@ a {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+.card__title {
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  color: hsl(var(--clr-heading));
+}
+
+.card__subtitle {
+  margin-block: 1.5rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.35;
+  color: hsl(var(--clr-accent));
+}
+
+.card__description {
+  font-size: 0.875rem;
+  line-height: 1.85;
+  color: hsl(var(--clr-secondary));
+}
+
 @media (min-width: 45rem) {
   .card {
     grid-template-columns: repeat(2, 1fr);
@@ -66,5 +86,19 @@ a {
 
   .card__header {
     grid-column: span 2;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+  }
+
+  .card__subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 0.5625rem;
+  }
+
+  .card__description {
+    font-size: 1rem;
+    line-height: 1.65;
   }
 }
