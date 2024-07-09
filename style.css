@@ -1,6 +1,6 @@
 :root {
   --clr-primary: 204 43% 93%;
-  --clr-secondary: 218, 22%, 67%;
+  --clr-secondary: 218 22% 67%;
   --clr-accent: 71 73% 54%;
   --clr-cyan: 179 62% 43%;
   --clr-heading: var(--clr-cyan);
@@ -108,6 +108,10 @@ section.pricing {
 .pricing__package strong {
   font-size: 2.0625rem;
   font-weight: var(--fw-bold);
+}
+
+.pricing__package span {
+  color: hsl(var(--clr-primary) / 70%);
 }
 
 .pricing__benefits {
