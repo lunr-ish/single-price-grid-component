@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-    rel="stylesheet"
-  />
+    <title>Frontend Mentor | Single Price Grid Component</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  Join our community
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
 
-  30-day, hassle-free money back guarantee
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card" aria-labelledby="card-title">
+        <div class="card__header">
+          <h1 id="card-title" class="card__title">Join our community</h1>
+          <p class="card__subtitle">30-day, hassle-free money back guarantee</p>
+          <p class="card__description">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </div>
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+        <section class="pricing">
+          <h2 class="pricing__title">Monthly Subscription</h2>
+          <p class="pricing__package">
+            <strong>&dollar;29</strong><span> per month</span>
+          </p>
+          <p class="pricing__benefits">
+            Full access for less than &dollar;1 a day
+          </p>
+          <a href="#" class="cta">Sign Up</a>
+        </section>
 
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-</body>
+        <section class="features">
+          <h2 class="features__title">Why Us</h2>
+          <ul class="features__list">
+            <li class="features__item">Tutorials by industry experts</li>
+            <li class="features__item">Peer &amp; expert code review</li>
+            <li class="features__item">Coding exercises</li>
+            <li class="features__item">Access to our GitHub repos</li>
+            <li class="features__item">Community forum</li>
+            <li class="features__item">Flashcard decks</li>
+            <li class="features__item">New videos every week</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
