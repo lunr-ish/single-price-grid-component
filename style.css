@@ -50,12 +50,15 @@ a {
 
 .card {
   max-width: 39.6875rem;
-  padding: 1.75rem 1.5rem 1.625rem;
   background: hsl(var(--clr-white));
   display: grid;
   grid-template-columns: 1fr;
   border-radius: 0.25rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card__header {
+  padding: 1.75rem 1.5rem 2rem;
 }
 
 .card__title {
@@ -81,11 +84,11 @@ a {
 @media (min-width: 45rem) {
   .card {
     grid-template-columns: repeat(2, 1fr);
-    padding: 2.5rem;
   }
 
   .card__header {
     grid-column: span 2;
+    padding: 2.5rem;
   }
 
   .card__title {
